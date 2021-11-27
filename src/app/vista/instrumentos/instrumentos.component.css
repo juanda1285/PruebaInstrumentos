@@ -1,0 +1,30 @@
+
+.header {
+  overflow: hidden;
+  background-color: #f3f1f1;
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 5px;
+}
+
+.contenedor {
+  text-align: center
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}

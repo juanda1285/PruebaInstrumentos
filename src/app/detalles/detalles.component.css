@@ -1,0 +1,7 @@
+.imgSize {
+    height: 15rem;
+    object-fit: cover;
+}
+.modal-body{
+    text-align:center
+}

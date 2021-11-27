@@ -1,0 +1,25 @@
+<div class="header">
+  <a>Instrumentos</a>
+</div>
+
+<hr>
+<section class="contenedor">
+  <table class="table table-striped">
+    <thead>
+      <th scope="col">id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio </th>
+      <th scope="col"></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let instrumento of instrumentos">
+        <td> {{instrumento.id}} </td>
+        <td> {{instrumento.name}} </td>
+        <td> {{instrumento.price}} </td>
+        <td><button class="btn btn-lg btn-outline-primary" (click)="onClick(instrumento)">Info</button></td>
+
+      </tr>
+    </tbody>
+  </table>
+  <h5>Precio promedio : {{total | currency }}</h5>
+</section>
